@@ -1,14 +1,9 @@
+import useRouter from "./useRouter";
+
 function Root() {
+  const { push } = useRouter();
   const onClick = () => {
-    const state = {};
-    const url = "about";
-
-    history.pushState(state, "", url);
-
-    const popStateEvent = new PopStateEvent("popstate", {
-      state: history.state,
-    });
-    dispatchEvent(popStateEvent);
+    push({ url: "about" });
   };
   return (
     <div>
