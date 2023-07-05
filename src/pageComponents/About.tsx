@@ -1,4 +1,4 @@
-import useRouter from "./useRouter";
+import useRouter from "../useRouter";
 
 function About() {
   const { push } = useRouter();
@@ -6,8 +6,9 @@ function About() {
     push({ url: "/" });
   };
   return (
-    <div>
-      About
+    <div className="page">
+      <h1>About</h1>
+
       <button onClick={onClick}>root</button>
     </div>
   );
