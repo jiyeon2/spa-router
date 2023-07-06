@@ -12,6 +12,7 @@ yarn dev
 
 ```
 
+
 ## 목표
 
 라이브러리를 사용하지 않고 history api를 활용하여 클라이언트에서 라우팅 기능 구현
@@ -40,6 +41,9 @@ yarn dev
 ```tsx
 const { push } = useRouter();
 ```
+
+## 동작화면
+![test1](https://github.com/jiyeon2/spa-router/assets/18395475/8d6de7e7-ab48-4c9d-9d87-178a92cd3f5a)
 
 ## 진행 과정
 
